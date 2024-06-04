@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 
 export default function Nav() {
   const Links = [
-    { name: "Home", Link: "/Landing" },
+    { name: "Home", Link: "/Home" },
     { name: "About", Link: "/about" },
     { name: "Team", Link: "/team" },
     { name: "Service", Link: "/service" },
@@ -43,4 +43,3 @@ export default function Nav() {
     </div>
   );
 };
-

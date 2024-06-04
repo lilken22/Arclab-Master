@@ -1,8 +1,8 @@
 // import { BrowserRouter, Route, Routes} from 'react-router-dom';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import './App.css';
-// import Nav from './Components/Nav';
-import Landing from './Pages/Landing';
+import Nav from './Components/Nav';
+import Home from './Pages/Home';
 // import Footer from './Components/Footer';
 import About from './Pages/About';
 import Contact from './Pages/Contact';
@@ -14,15 +14,15 @@ import Teams from './Pages/Teams';
 // import Content2 from './Blogy2/Content2';
 // import BlogSingle from './Blogy2/BlogSingle';
 
-// {/* <Nav className="" /> */}
+
 
 function App() {
   return (
     <Router>
       <main className="w-full h-screen">
-      
+       <Nav />      
         <Routes>
-          <Route path='/landing' element={<Landing />} />
+          <Route path='/' element={<Home />} />
           <Route path='about' element={<About />} />
           <Route path='contact' element={<Contact/>} />
           <Route path='blogs' element={<Blogs/>} />
